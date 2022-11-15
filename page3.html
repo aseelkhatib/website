@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Title</title>
+  
+  <meta name="description" content="Basic HTML template to kick start your project.">
+  <meta name="author" content="Operation Launch">
+  <meta name="keywords" content="HTML5, HTML"> 
+  <link rel="stylesheet" href="styles_page3.css"> 
+
+</head>
+
+<body>
+  <!-- Header Content -->
+  <p style="font-size: 15px;text-align:left;"> step 3 </p>
+  <header> TeamTaub Gaming Plans </header>
+   <p id="plan_num"></p> 
+  <p>Enter Credit Card Details.</p>
+  <form action="/page4.html" method="get" class="card">
+  <div class="card">
+  <label for="cc number">cc number : </label>
+  <input type="text" maxlength="16" minlength="16" name="cc number" id="cc number" pattern="[0-9]+" title="only numbers" required>
+  </div>
+  <div class="card">
+    <label for="name">name : </label> 
+    <input type="text" name="name" id="name" pattern="[A-Za-z\s]+" title="English-only characters" required>
+    <label for="cvv">cvv : </label>
+    <input type="text" maxlength="3" minlength="3" name="cvv" id="cvv" pattern="[0-9]+" title="only numbers" required>
+    </div>
+    <div class="card">
+      <label for="experation">experation : </label>
+      <!--check the date -->
+      <input type="month" name="experation" id="experation" required>
+      </div>
+      <div class="card">
+      <input type="submit" value="submit" style="background-color: grey;font-size:25px;">
+      </div>
+    </form>
+  <script src="scripts_page3.js" type="module"></script>
+</body>
+</html>
